@@ -9,7 +9,8 @@ async function searchMovies() {
     try {
       const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${search}`);
       const data = await response.json();
-
+      console.log(data);
+      
       if (data.Search && data.Search.length > 0) {
         moviestoshow(data.Search);
       } else {
