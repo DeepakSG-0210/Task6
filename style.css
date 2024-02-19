@@ -43,6 +43,7 @@
 .search input:focus-within{
     box-shadow: 0px 0px 8px 2px rgb(0, 187, 254);
 }
+
 .search input{
     left: 0;
     justify-content: center;
